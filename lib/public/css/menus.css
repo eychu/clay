@@ -144,6 +144,7 @@
 
 /* --- Terminal toggle button (mobile only) --- */
 #footer-status,
+#tui-resize-btn,
 #terminal-toggle-btn {
   display: flex;
   align-items: center;
@@ -157,9 +158,12 @@
   transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 #footer-status .lucide,
+#tui-resize-btn .lucide,
 #terminal-toggle-btn .lucide { width: 15px; height: 15px; }
 #footer-status:hover,
+#tui-resize-btn:hover,
 #terminal-toggle-btn:hover { color: var(--text-secondary); background: rgba(var(--overlay-rgb),0.04); border-color: var(--border); }
+#tui-resize-btn.hidden { display: none; }
 #terminal-toggle-btn { position: relative; }
 #terminal-count {
   position: absolute;
@@ -853,5 +857,4 @@
   #config-chip .config-chip-icon { display: inline; width: 14px; height: 14px; }
   #config-chip-label { display: none; }
 }
-
 
